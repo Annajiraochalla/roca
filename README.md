@@ -1,5 +1,5 @@
 # RoboCA
-Measure Robustness of Cellular Automata Rule of any shape
+Measure Robustness of Cellular Automata Rule
 
 # Citation
 If you use `RoboCA` in your research, please cite us and check out our paper! 
