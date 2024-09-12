@@ -158,10 +158,11 @@ class Model:
         if lut_length == 0 or (lut_length & (lut_length - 1)) != 0:
             raise ValueError("LUT length must be a power of 2 and greater than 0.")
     
-        node = BooleanNode(k=int(math.log2(lut_length)), outputs=lut)
+        n_inputs = int(math.log2(lut_length))
+        node = BooleanNode(k=n_inputs, outputs=lut)
         
         ks = node.input_symmetry()
         ke = node.effective_connectivity()
-        kr = 1 / ke if ke != 0 else float('inf') 
+        kr = n_inputs - ke
         
         return f"Input Symmetry: {ks:.4f}, Input Redundancy: {kr:.4f}"
