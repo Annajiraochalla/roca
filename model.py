@@ -22,7 +22,7 @@ class Model:
                  lattice_size: int = 149,
                  test_rate: int = 5,
                  deviations: int = 3,
-                 n_walkers: int = 100_000) -> None:
+                 n_walkers: int = 1) -> None:
         """
         Parameters
         ----------

@@ -12,6 +12,6 @@ Requires `CuPy` (https://cupy.dev/), which in turn requires the `CUDA Toolkit` (
 
 After installing these prerequisites, install `ROCA` via
 ```
-pip install git+https://github.com/Annajiraochalla/RoboCA
+pip install git+https://github.com/Annajiraochalla/roca
 ```
 Note that this `pip` command ***WILL NOT*** install the `CuPy` and `CUDA Toolkit` dependencies automatically. These are hardware-specific and must be installed manually.
