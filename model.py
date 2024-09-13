@@ -162,7 +162,7 @@ class Model:
         node = BooleanNode(k=n_inputs, outputs=lut)
         
         ks = node.input_symmetry()
-        ke = node.effective_connectivity()
+        ke = node.effective_connectivity(norm = False)
         kr = n_inputs - ke
         
         return f"Input Symmetry: {ks:.4f}, Input Redundancy: {kr:.4f}, Effective Connectivity: {ke:.4f}"
