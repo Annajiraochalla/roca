@@ -165,4 +165,4 @@ class Model:
         ke = node.effective_connectivity()
         kr = n_inputs - ke
         
-        return f"Input Symmetry: {ks:.4f}, Input Redundancy: {kr:.4f}"
+        return f"Input Symmetry: {ks:.4f}, Input Redundancy: {kr:.4f}, Effective Connectivity: {ke:.4f}"
